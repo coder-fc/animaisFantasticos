@@ -1,3 +1,7 @@
+[data-cor="azul"] {
+    background: blue;
+}
+
 body, h1, h2, ul, li, p, dd, dl, dt{
     margin: 0;
     padding: 0%;
