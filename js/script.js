@@ -13,7 +13,6 @@ import initAnimacaoScroll from './modules/scroll-animacao.js';
 const scrollsuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollsuave.init();
 
-
 initAccordion();
 initTabNav();
 initModal();
