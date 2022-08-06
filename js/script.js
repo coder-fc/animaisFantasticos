@@ -9,6 +9,7 @@ import fetchAnimais from './modules/fetch-animais.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
 import ScrollAnima from './modules/scroll-anima.js';
 import DropdownMenu from './modules/dropdown-menu.js';
+import SlideNav from './modules/slide.js';
 
 const scrollsuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollsuave.init();
@@ -39,3 +40,7 @@ funcionamento.init();
 
 fetchAnimais('https://devfc-m.github.io/animaisFantasticos/animaisapi.json', '.numeros-grid');
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
+
+const slide = new SlideNav('.slide', '.container');
+slide.init();
+slide.controlAdd('.custom-controls');
